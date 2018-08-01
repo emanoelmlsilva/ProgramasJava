@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLAreaDeInteresseTuristicoController">
+   <children>
+      <ImageView fitHeight="266.0" fitWidth="425.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/13072016_Mapaturismo_Mtur.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="266.0" fitWidth="284.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/mapa-brasil.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c2727" height="654.0" layoutX="260.0" stroke="BLACK" strokeType="INSIDE" width="296.0" />
+      <Label layoutX="272.0" layoutY="49.0" prefHeight="40.0" prefWidth="272.0" text="AREA DE INTERESSE TURISTICO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtNome" layoutX="291.0" layoutY="108.0" text="INTERESSE TURISTICO" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+      <TextField fx:id="lblNome" layoutX="291.0" layoutY="147.0" prefHeight="25.0" prefWidth="242.0" />
+      <Button fx:id="btnCadasrar" layoutX="354.0" layoutY="207.0" mnemonicParsing="false" onAction="#BotaoCadastrar" prefHeight="88.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="CADASTRAR" textFill="#ae3838" />
+      <ImageView fitHeight="170.0" fitWidth="260.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/ijo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

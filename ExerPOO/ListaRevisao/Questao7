@@ -1,0 +1,7 @@
+Qual a diferença entre herança e composição em Java?
+
+herança é uma classe que tem os mesmo atributos e metodos da classe mãe apenas se a visibilidade for publica ou protegida, mais com outros metodos e atributos proprios,
+utiliza-se de generalização para as similaridade entre classe e dessa forma define novas classes, as classes mais genericas são as classe pai,
+e as especificações entre classes distintas colocam-se nas classes filhas.
+
+ ja a composição é uma classe dentro de outra, é um objeto que precisa do outro para funcionar.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLMenuController">
+   <children>
+      <ImageView fitHeight="258.0" fitWidth="547.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/dia_agente_viagens_02-mq4855qp005hyi454vy1iz169qftddh6cuxeph3t8w.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="37.0" stroke="BLACK" strokeType="INSIDE" width="516.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000ea" height="341.0" layoutY="249.0" stroke="BLACK" strokeType="INSIDE" width="516.0">
+         <effect>
+            <BoxBlur height="14.11" width="0.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00788d" height="323.0" layoutY="273.0" stroke="BLACK" strokeType="INSIDE" width="516.0">
+         <effect>
+            <DropShadow height="127.5" radius="95.125" width="255.0" />
+         </effect>
+      </Rectangle>
+      <Button fx:id="btnCadastraMunicipio" layoutX="16.0" layoutY="290.0" mnemonicParsing="false" onAction="#BotaoCadastraMunicipio" prefHeight="98.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="CADASTRA MUNICÍPIO" textAlignment="JUSTIFY" textFill="WHITE" />
+      <Button fx:id="btnCadastraAtrativoTuristico" layoutX="170.0" layoutY="290.0" mnemonicParsing="false" onAction="#BotaoCadastraAtrativoTuristico" prefHeight="98.0" prefWidth="172.0" style="-fx-background-color: #000000;" text="CADASTRA ATRATIVO TURÍSTICO" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="btnListaMunicipio" layoutX="356.0" layoutY="290.0" mnemonicParsing="false" onAction="#BotaoListaMunicipio" prefHeight="98.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="btnListaMunicipio.getText()" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="btnSair" layoutX="170.0" layoutY="411.0" mnemonicParsing="false" onAction="#BotaoSair" prefHeight="91.0" prefWidth="122.0" style="-fx-background-color: #000000;" text="SAIR" textFill="WHITE" />
+      <Label layoutX="46.0" layoutY="9.0" text="AREA DE INTERESSE:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtAreaInteresse" layoutX="191.0" layoutY="9.0" prefHeight="20.0" prefWidth="302.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnListaAtrativo" layoutX="16.0" layoutY="411.0" mnemonicParsing="false" onAction="#BotaoListaAtrativo" prefHeight="91.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="LISTA DE ATRATIVO DE MUNICÍPIO" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</AnchorPane>

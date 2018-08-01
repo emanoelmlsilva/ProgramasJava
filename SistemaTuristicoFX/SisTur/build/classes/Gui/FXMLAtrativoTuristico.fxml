@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLAtrativoTuristicoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010e1b" height="713.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="501.0" />
+      <ImageView fitHeight="149.0" fitWidth="146.0" layoutX="12.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/za.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="149.0" fitWidth="146.0" layoutX="180.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/za.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="149.0" fitWidth="146.0" layoutX="343.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/za.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="113.0" layoutY="14.0" text="CADASTRAR ATRATIVO TURISTICO" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <RadioButton fx:id="radioAtratArtificial" layoutX="204.0" layoutY="576.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="106.0" style="-fx-background-color: #DCDCDC;" text="ARTIFICIAL">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoAtrativo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioEventProgramado" layoutX="365.0" layoutY="576.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="89.0" style="-fx-background-color: #DCDCDC;" text="EVENTO" toggleGroup="$grupoAtrativo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioAtratNatural" layoutX="42.0" layoutY="576.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" selected="true" style="-fx-background-color: #DCDCDC;" text="NATURAL" toggleGroup="$grupoAtrativo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="lblNome" layoutX="62.0" layoutY="164.0" prefHeight="25.0" prefWidth="387.0" />
+      <TextField fx:id="lblLatitude" layoutX="60.0" layoutY="222.0" prefHeight="25.0" prefWidth="392.0" />
+      <TextField fx:id="lblLongitude" layoutX="59.0" layoutY="277.0" prefHeight="25.0" prefWidth="395.0" />
+      <TextField fx:id="lblEstado" layoutX="58.0" layoutY="339.0" prefHeight="25.0" prefWidth="398.0" />
+      <TextField fx:id="lblSite" layoutX="60.0" layoutY="395.0" prefHeight="26.0" prefWidth="391.0" />
+      <TextField fx:id="lblComoChegar" layoutX="58.0" layoutY="461.0" prefHeight="26.0" prefWidth="396.0" />
+      <TextField fx:id="lblInfoContato" layoutX="57.0" layoutY="523.0" prefHeight="25.0" prefWidth="394.0" />
+      <Label fx:id="txtNome" layoutX="66.0" layoutY="133.0" text="ATRATIVO :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtLatitude" layoutX="68.0" layoutY="189.0" text="LATITUDE :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtLongitude" layoutX="63.0" layoutY="248.0" text="LONGITUDE :" textFill="WHITE">
+         <effect>
+            <BoxBlur height="0.0" iterations="0" width="239.82" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtEstado" layoutX="62.0" layoutY="307.0" text="ESTADO :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtSite" layoutX="59.0" layoutY="364.0" text="SITE :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtComoChegar" layoutX="60.0" layoutY="429.0" text="COMO CHEGAR :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtInfoContato" layoutX="64.0" layoutY="492.0" text="CONTATO :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="47.0" layoutY="623.0" mnemonicParsing="false" onAction="#BotaoVoltar" prefHeight="62.0" prefWidth="89.0" style="-fx-background-color: #010e1b;" text="VOLTAR" textFill="GAINSBORO">
+         <effect>
+            <DropShadow height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </Button>
+      <Button fx:id="btnAvancar" layoutX="365.0" layoutY="623.0" mnemonicParsing="false" onAction="#BotaoAvancar" prefHeight="62.0" prefWidth="89.0" style="-fx-background-color: #010e1b;" text="AVANÇAR" textFill="GAINSBORO">
+         <effect>
+            <DropShadow height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </Button>
+      <ComboBox fx:id="cbMunicipio" layoutX="175.0" layoutY="83.0" prefHeight="25.0" prefWidth="181.0" />
+      <Label layoutX="176.0" layoutY="46.0" text="ESCOLHER MUNICIPIO" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtInfor" layoutX="196.0" layoutY="124.0" prefHeight="17.0" prefWidth="139.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

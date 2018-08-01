@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLMeioDeHospedagemController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#163043" height="715.0" stroke="BLACK" strokeType="INSIDE" width="477.0">
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.24" width="255.0" />
+         </effect></Rectangle>
+      <ImageView fitHeight="760.0" fitWidth="475.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/destaque_SF1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="572.0" fitWidth="476.0" layoutX="1.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/sdsdg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="237.0" fitWidth="475.0" layoutX="2.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/ll.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#163042a5" height="715.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="477.0">
+         <effect>
+            <MotionBlur angle="360.0" radius="29.25" />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="lblNome" layoutX="55.0" layoutY="109.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="lblLatitude" layoutX="55.0" layoutY="168.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="lblLongitude" layoutX="56.0" layoutY="233.0" prefHeight="25.0" prefWidth="387.0" />
+      <TextField fx:id="lblSite" layoutX="55.0" layoutY="296.0" prefHeight="25.0" prefWidth="390.0" />
+      <Label fx:id="txtLatitude" layoutX="56.0" layoutY="138.0" text="LATITUDE" textFill="WHITE" />
+      <Label fx:id="txtLongitude" layoutX="55.0" layoutY="200.0" text="LONGITUDE" textFill="WHITE" />
+      <Label fx:id="txtSite" layoutX="59.0" layoutY="265.0" text="SITE" textFill="WHITE" />
+      <Label fx:id="txtNome" layoutX="54.0" layoutY="87.0" text="NOME" textFill="#fff9f9" />
+      <Label fx:id="txtInfoContato" layoutX="56.0" layoutY="326.0" text="INFO CONTATO" textFill="WHITE" />
+      <TextField fx:id="lblInfoContato" layoutX="57.0" layoutY="358.0" prefHeight="25.0" prefWidth="390.0" />
+      <Label layoutX="59.0" layoutY="565.0" text="TIPO  " textFill="WHITE" />
+      <RadioButton fx:id="radioHotel" layoutX="62.0" layoutY="598.0" mnemonicParsing="false" selected="true" text="HOTEL" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoHospedagem" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioPousada" layoutX="194.0" layoutY="597.0" mnemonicParsing="false" text="POUSADA" textFill="WHITE" toggleGroup="$grupoHospedagem" />
+      <RadioButton fx:id="radioAlbergue" layoutX="341.0" layoutY="598.0" mnemonicParsing="false" text="ALBERGUE" textFill="WHITE" toggleGroup="$grupoHospedagem" />
+      <Label fx:id="txtLogradouro" layoutX="62.0" layoutY="396.0" text="LOGRADOURO" textFill="WHITE" />
+      <Label fx:id="txtNumero" layoutX="62.0" layoutY="454.0" text="NUMERO" textFill="WHITE" />
+      <Label fx:id="txtBairro" layoutX="60.0" layoutY="509.0" text="BAIRRO" textFill="WHITE" />
+      <TextField fx:id="lblLogradouro" layoutX="58.0" layoutY="419.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="lblNumero" layoutX="57.0" layoutY="475.0" prefHeight="25.0" prefWidth="390.0" />
+      <TextField fx:id="lblBairro" layoutX="57.0" layoutY="529.0" prefHeight="25.0" prefWidth="390.0" />
+      <Button fx:id="btnCadastrar" layoutX="363.0" layoutY="648.0" mnemonicParsing="false" onAction="#BotaoCadastrar" prefHeight="52.0" prefWidth="86.0" text="CADASTRAR" />
+      <Button fx:id="btnVoltar" layoutX="65.0" layoutY="653.0" mnemonicParsing="false" onAction="#BotaoVoltar" prefHeight="52.0" prefWidth="65.0" text="VOLTAR" />
+      <Label layoutX="172.0" layoutY="35.0" text="MEIO DE HOSPEDAGEM" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="301.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/icons8_Hotel_50px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="52.0" layoutX="156.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/icons8_Hotel_64px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="210.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/icons8_Hotel_40px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="48.0" layoutX="253.0" layoutY="637.0">
+         <image>
+            <Image url="@../imagens/icons8_Hotel_50px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

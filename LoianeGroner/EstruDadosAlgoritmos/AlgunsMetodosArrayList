@@ -1,0 +1,11 @@
+ArrayList<Tipo> arrayList = new ArrayList<Tipo>();
+
+arrayList.add(elemento) == adiciona
+arrayList.add(indec,elemento) == adiciona informando o indece
+arrayList.contains(elemento) == busca o parametro e retorna um boolean
+arrayList.indexOf(elemento) == retorna qual o indece do parametro
+arrayList.get(indece) == retorna o valor do indece passado
+arrayList.remove(elemento) == remove usando elementos
+arrayList.remove(indece) == remove usando indece
+arrayList.size() == retorna o tamanho
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLPraiaController">
+   <children>
+      <ImageView fitHeight="719.0" fitWidth="572.0" layoutX="-10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/Piscina-Natural-de-Pajuçara-Maceió-Wesley-Menegari.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00254d91" height="380.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="562.0">
+         <effect>
+            <BoxBlur height="255.0" iterations="2" width="255.0" />
+         </effect>
+      </Rectangle>
+      <RadioButton fx:id="radioPerigoTubarao" layoutX="125.0" layoutY="118.0" mnemonicParsing="false" selected="true" text="Perigo Tubarão" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoPerigoTubarao" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioNaoPerigoTubarao" layoutX="273.0" layoutY="118.0" mnemonicParsing="false" text="Não tem Perigo Tubarão" textFill="WHITE" toggleGroup="$grupoPerigoTubarao" />
+      <RadioButton fx:id="radioPropriaBanho" layoutX="126.0" layoutY="179.0" mnemonicParsing="false" selected="true" text="Propria Para Banho" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoPropriaBanho" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioImpropriaBanho" layoutX="271.0" layoutY="179.0" mnemonicParsing="false" text="Impropria para Banho" textFill="WHITE" toggleGroup="$grupoPropriaBanho" />
+      <Label layoutX="128.0" layoutY="239.0" text="Tipo De Orla:" textFill="WHITE" />
+      <ComboBox fx:id="cbTipoOrla" layoutX="236.0" layoutY="235.0" prefWidth="150.0" />
+      <Button fx:id="btnVoltar" layoutX="126.0" layoutY="303.0" mnemonicParsing="false" onAction="#BotaoVoltar" text="Voltar" />
+      <Button fx:id="btnCadastrar" layoutX="340.0" layoutY="297.0" mnemonicParsing="false" onAction="#BotaoCadastrar" text="Cadastrar" />
+      <Label fx:id="txtInfo" layoutX="393.0" layoutY="239.0" prefHeight="17.0" prefWidth="152.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

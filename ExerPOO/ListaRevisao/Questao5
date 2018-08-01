@@ -1,0 +1,5 @@
+Qual a diferença entre sobreposição e sobrecarga de métodos em Java?
+
+sobreposição é rescrever o metodo em outra classe que são extendidas por ela com mesmo parametro(s) e assinatura.
+
+sobrecarga é rescrever o metodo na mesma classe mudando assinatura ou parametros.
