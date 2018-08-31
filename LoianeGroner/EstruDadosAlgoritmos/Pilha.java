@@ -8,34 +8,38 @@ public class Pilha<T>{
         this.tamanho = 0;
     }
 
-    // public aumentaCapacidade(){
-    //     if(this.tamanho == this.elementes.length){
-    //         T[] elemento = (T[]) new Object[this.elemntos.length*2];
-    //         for(int i = 0;i < this.tamanho;i++){
-    //             elemento[i] = this.elementes[i];
-    //         }
-    //         this.elementes = elemento;
-    //     }
-    // }
+    public int tamanho(){
+        return this.tamanho;
+    }
 
-    // public boolean estaVazia(){
-    //     return this.tamanho == 0;
-    // }
+    public aumentaCapacidade(){
+        if(this.tamanho == this.elementes.length){
+            T[] elemento = (T[]) new Object[this.elemntos.length*2];
+            for(int i = 0;i < this.tamanho;i++){
+                elemento[i] = this.elementes[i];
+            }
+            this.elementes = elemento;
+        }
+    }
 
-    // public void empilha(T elemento){
-    //     this.aumentaCapacidade();
-    //     this.elementes[this.tamanho] = elemento;
-    //     this.tamanho++;
-    // }
+    public boolean estaVazia(){
+        return this.tamanho == 0;
+    }
 
-    // public T desempilha(){        
-    //     return this.elementes[this.tamanho];    
-    // }
+    public void empilha(T elemento){
+        this.aumentaCapacidade();
+        this.elementes[this.tamanho] = elemento;
+        this.tamanho++;
+    }
+
+    public T desempilha(){        
+        return this.elementes[this.tamanho];    
+    }
 
 
-    // public int tamanho(){
-    //     return this.tamanho;
-    // }   
+    public int tamanho(){
+        return this.tamanho;
+    }   
 
     public String toString(){
 

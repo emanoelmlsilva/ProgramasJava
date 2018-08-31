@@ -27,7 +27,7 @@ public class Lista<T>{//vetor/array configura tipo dinamicamente (<>) generics
         return false; 
     } 
 
-    public void adiciona(int posicao,T elemento){// adiciona elemento em qualquer posicao
+    public boolean adiciona(int posicao,T elemento){// adiciona elemento em qualquer posicao
         if(!(posicao >= 0 && posicao < this.tamanho)) throw new IllegalArgumentException("posição inválida");
         
         this.aumentaCapacidade();
@@ -38,7 +38,8 @@ public class Lista<T>{//vetor/array configura tipo dinamicamente (<>) generics
         }
 
         this.elementos[posicao] = elemento;
-        this.tamanho++;        
+        this.tamanho++;   
+        return true;     
     }
 
     public void remove(int posicao){//remove elemento do array
